@@ -10,6 +10,9 @@
 \usepackage{beamerthemesplit}
 \usetheme{lankton-keynote}
 \usepackage{units}
+\usepackage{graphicx}
+
+\graphicspath{{./figures/}}
 
 \author[Kevin Liu Rodrigues]{Kevin Liu Rodrigues}
 \title[frame \hspace{2em}\insertframenumber/\inserttotalframenumber]{Synchronization on Discrete Oscillators}
@@ -31,7 +34,7 @@
 \begin{frame}{Motivations}
     \begin{columns}[t]
         \begin{column}{.6\textwidth}
-            \adjincludegraphics[width=0.7\textwidth, valign=t]{./bz.eps}
+            \adjincludegraphics[width=0.7\textwidth, valign=t]{bz.eps}
         \end{column}
         \begin{column}{.4\textwidth}
             Simulation of the B-Z reaction on a 2-D Petri dish.
@@ -42,7 +45,7 @@
 \begin{frame}{Motivations}
     \begin{columns}[t]
         \begin{column}{0.6\textwidth}
-            \adjincludegraphics[width=.9\linewidth, valign=t]{./bbc.eps}
+            \adjincludegraphics[width=.9\linewidth, valign=t]{bbc.eps}
         \end{column}
         \begin{column}{0.4\textwidth}
             BBC United Kingdom (2010) ``Wet computing''
@@ -74,7 +77,7 @@
     \begin{columns}[t]
         \begin{column}{0.5\textwidth}
             \centering
-            \adjincludegraphics[width=0.9\linewidth, valign=t]{./wood-model.eps}
+            \adjincludegraphics[width=0.9\linewidth, valign=t]{wood-model.eps}
         \end{column}
         \begin{column}{0.6\textwidth}
             Coupling function $\Gamma_i = \exp \left( a \frac{K_i^{x_i + 1} - K_i^{x_i}}{K_i} \right)$ \\
@@ -95,7 +98,7 @@
 \begin{frame}{The model}
     \begin{columns}
         \begin{column}{0.4\textwidth}
-            \adjincludegraphics[width=0.9\linewidth, valign=t]{./order-parameter.eps}
+            \adjincludegraphics[width=0.9\linewidth, valign=t]{order-parameter.eps}
         \end{column}
         \begin{column}{0.6\textwidth}
             Oscillators as vectors in the unit circle
@@ -146,7 +149,7 @@
     \centering
     Behavior of $\psi$ as a function of coupling for the all-to-all graph\\
     \vspace{0.8cm}
-    \includegraphics[height=0.7\textheight]{./psi-vs-a.eps}\\
+    \includegraphics[height=0.7\textheight]{psi-vs-a.eps}\\
     Vladimir R V Assis et al J. Stat. Mech. (2011) P09023
 \end{frame}
 
@@ -154,7 +157,7 @@
     \centering
     Evolution of population of states as a function of time\\
     \vspace{0.8cm}
-    \includegraphics[height=0.6\textheight]{./pop-evolution.eps}\\
+    \includegraphics[height=0.6\textheight]{pop-evolution.eps}\\
     Vladimir R V Assis et al J. Stat. Mech. (2011) P09023
 \end{frame}
 
@@ -162,7 +165,7 @@
     \centering
     Frequency of oscillations and order parameter $r$ as functions of coupling\\
     \vspace{0.8cm}
-    \includegraphics[height=0.6\textheight]{./rvsa.eps}\\
+    \includegraphics[height=0.6\textheight]{rvsa.eps}\\
     Vladimir R V Assis et al J. Stat. Mech. (2011) P09023
 \end{frame}
 
@@ -170,7 +173,7 @@
     \centering
     Event driven dynamics simulation on the complete graph\\
     \vspace{0.8cm}
-    \includegraphics[width=\textwidth]{./complete_graph.eps}
+    \includegraphics[width=\textwidth]{complete_graph.eps}
 \end{frame}
 
 \begin{frame}
@@ -184,7 +187,7 @@
 \end{frame}
 
 \begin{frame}
-    \includegraphics[width=0.1\textwidth]{./cube.eps}\hspace{0.5cm}
+    \includegraphics[width=0.1\textwidth]{cube.eps}\hspace{0.5cm}
     Cubic lattices
     \begin{itemize}
         \vspace{0.25cm}
@@ -203,7 +206,7 @@
     \centering
     Cluster growth at high coupling in a square lattice\\
     \vspace{0.8cm}
-    \includegraphics[height=0.6\textheight]{./nucleation.eps}\\
+    \includegraphics[height=0.6\textheight]{nucleation.eps}\\
     Vladimir R V Assis et al J. Stat. Mech. (2011) P09023
 \end{frame}
 
@@ -211,14 +214,14 @@
     \centering
     Escape time from homogeneous initial condition\\
     \vspace{0.8cm}
-    \includegraphics[height=0.75\textheight]{./escapetime.eps}\\
+    \includegraphics[height=0.75\textheight]{escapetime.eps}\\
     Vladimir R V Assis et al J. Stat. Mech. (2011) P09023
 \end{frame}
 
 \begin{frame}
     \begin{columns}
         \begin{column}{.5\textwidth}
-            \adjincludegraphics[width=\textwidth, valign=t]{./ring.eps}\\
+            \adjincludegraphics[width=\textwidth, valign=t]{ring.eps}\\
             \vspace{0.1cm}
             N=12, K=2
         \end{column}
@@ -241,9 +244,9 @@
 \begin{frame}
     \begin{columns}
         \begin{column}{.5\textwidth}
-            \adjincludegraphics[height=0.4\textheight, valign=t]{./ring.eps}\\
+            \adjincludegraphics[height=0.4\textheight, valign=t]{ring.eps}\\
             \vspace{0.1cm}
-            \adjincludegraphics[height=0.4\textheight, valign=t]{./rewiredring.eps}\\
+            \adjincludegraphics[height=0.4\textheight, valign=t]{rewiredring.eps}\\
             N=12, K=2, p=0.1
         \end{column}
         \begin{column}{.5\textwidth}
@@ -274,15 +277,15 @@
 
 \begin{frame}
     \centering
-    \includegraphics[height=0.85\textheight]{./small-world.eps}
+    \includegraphics[height=0.85\textheight]{small-world.eps}
 \end{frame}
 
 \begin{frame}
     \begin{columns}
         \begin{column}{0.4\textwidth}
-            \adjincludegraphics[height=0.35\textheight, valign=t]{./ring-1D.eps}\\
+            \adjincludegraphics[height=0.35\textheight, valign=t]{ring-1D.eps}\\
             N=12, K=1
-            \adjincludegraphics[height=0.35\textheight, valign=t]{./ring-Complete.eps}\\
+            \adjincludegraphics[height=0.35\textheight, valign=t]{ring-Complete.eps}\\
             N=5, K=2
         \end{column}
         \begin{column}{0.6\textwidth}
@@ -304,49 +307,49 @@
     \centering
     Population evolution on a ring lattice with N=10000 K=1280\\
     \vspace{0.8cm}
-    \includegraphics[width=\textwidth]{./pop-evolution-stacked-K_1280.eps}
+    \includegraphics[width=\textwidth]{pop-evolution-stacked-K_1280.eps}
 \end{frame}
 
 \begin{frame}
     \centering
     Population evolution on a ring lattice with N=10000 K=160\\
     \vspace{0.8cm}
-    \includegraphics[width=\textwidth]{./pop-evolution-stacked-K_160.eps}
+    \includegraphics[width=\textwidth]{pop-evolution-stacked-K_160.eps}
 \end{frame}
 
 \begin{frame}
     \centering
     Population evolution on a ring lattice with N=10000 K=80\\
     \vspace{0.8cm}
-    \includegraphics[width=0.8\textwidth]{./pop-evolution-stacked-K_80.eps}
+    \includegraphics[width=0.8\textwidth]{pop-evolution-stacked-K_80.eps}
 \end{frame}
 
 \begin{frame}
     \centering
     Fixed system size, increasing $K$ (or $\alpha$)\\
     \vspace{0.25cm}
-    \includegraphics[width=\textwidth]{./ringOP.eps}
+    \includegraphics[width=\textwidth]{ringOP.eps}
 \end{frame}
 
 \begin{frame}
     \centering
     Behavior for fixed $\alpha=0.1$ and increasing system size $N$\\
     \vspace{0.25cm}
-    \includegraphics[width=0.8\textwidth]{./increasingN-alpha10.eps}
+    \includegraphics[width=0.8\textwidth]{increasingN-alpha10.eps}
 \end{frame}
 
 \begin{frame}
     \centering
     Behavior for fixed $\alpha=0.34$ and increasing system size $N$\\
     \vspace{0.25cm}
-    \includegraphics[width=0.8\textwidth]{./increasingN-alpha34.eps}
+    \includegraphics[width=0.8\textwidth]{increasingN-alpha34.eps}
 \end{frame}
 
 \begin{frame}
     \centering
     Fixed $N$ and $K$, increasing $p$\\
     \vspace{0.25cm}
-    \includegraphics[height=0.8\textheight]{./rvsavsp.eps}
+    \includegraphics[height=0.8\textheight]{rvsavsp.eps}
 \end{frame}
 
 \begin{frame}{Conclusions and Discussion}
