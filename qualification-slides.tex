@@ -22,7 +22,7 @@
 
 \maketitle
 
-\begin{frame}{Motivations}
+\begin{frame}{\includegraphics[height=0.06\textheight]{erlenmeyer.eps}\hspace{0.25cm} Motivations}
     Belousov-Zhabotinsky reaction (1960)
     \begin{itemize}
         \item \ \pause Establishment of non-linear chemical oscillators
@@ -31,18 +31,20 @@
     \end{itemize}
 \end{frame}
 
-\begin{frame}{Motivations}
+\begin{frame}{\includegraphics[height=0.06\textheight]{erlenmeyer.eps}\hspace{0.25cm} Motivations}
     \begin{columns}[t]
         \begin{column}{.6\textwidth}
+            \centering
             \adjincludegraphics[width=0.7\textwidth, valign=t]{bz.eps}
         \end{column}
         \begin{column}{.4\textwidth}
+            \centering
             Simulation of the B-Z reaction on a 2-D Petri dish.
         \end{column}
     \end{columns}
 \end{frame}
 
-\begin{frame}{Motivations}
+\begin{frame}{\includegraphics[height=0.06\textheight]{neuron.eps}\hspace{0.25cm} Motivations}
     \begin{columns}[t]
         \begin{column}{0.6\textwidth}
             \adjincludegraphics[width=.9\linewidth, valign=t]{bbc.eps}
@@ -57,7 +59,7 @@
     \end{columns}
 \end{frame}
 
-\begin{frame}{The Model}
+\begin{frame}{\includegraphics[height=0.06\textheight]{lego-model.eps}\hspace{0.25cm} The Model}
     Oscillators are characterized by a discrete phase value which jumps \textbf{\textit{stochastically}} from one phase to the next.
     \begin{itemize}
         \vspace{0.25cm}
@@ -69,11 +71,11 @@
         \vspace{0.25cm}
         \item \ \pause \textbf{\textit{Isolated}} oscillators transition with intrinsic rate $g$
         \vspace{0.25cm}
-        \item \ \pause \textbf{\textit{Coupled}} oscillators have altered transition rates depending on its internal state and those of its neighbors
+        \item \ \pause \textbf{\textit{Coupled}} oscillators have altered transition rates depending on its internal state and those from its neighbors
     \end{itemize}
 \end{frame}
 
-\begin{frame}{The Model}
+\begin{frame}{\includegraphics[height=0.06\textheight]{lego-model.eps}\hspace{0.25cm} The Model}
     \begin{columns}[t]
         \begin{column}{0.5\textwidth}
             \centering
@@ -95,7 +97,7 @@
     \end{columns}
 \end{frame}
 
-\begin{frame}{The model}
+\begin{frame}{\includegraphics[height=0.06\textheight]{lego-model.eps}\hspace{0.25cm} The Model}
     \begin{columns}
         \begin{column}{0.4\textwidth}
             \adjincludegraphics[width=0.9\linewidth, valign=t]{order-parameter.eps}
@@ -109,6 +111,8 @@
                 \item \ \pause $\left< \right>_t$: \textit{\textbf{time}} average\\
                     \hspace{0.1cm}$\left< \right>_s$: average over \textit{\textbf{independent trials}}
                 \vspace{0.25cm}
+                \item \ \pause $r$ is the Kuramoto order parameter
+                \vspace{0.25cm}
                 \item \ \pause $\chi_r$ is the scaled variance of the order parameter $r$
                 \vspace{0.25cm}
                 \item \ \pause $\psi$: order parameter (infinite period transition)
@@ -117,8 +121,8 @@
     \end{columns}
 \end{frame}
 
-\begin{frame}
-    All-to-all graphs
+\begin{frame}{\includegraphics[height=0.06\textheight]{ring-complete-thumb.eps}\hspace{0.25cm} All-to-all graphs}
+    Every oscillator interacts with every other
     \begin{itemize}
         \vspace{0.35cm}
         \item \ \pause $\frac{N^x}{N} \rightarrow P(x)$: probability of finding a given vertex in state $x$
@@ -145,50 +149,58 @@
     \end{itemize}
 \end{frame}
 
-\begin{frame}
-    \centering
-    Behavior of $\psi$ as a function of coupling for the all-to-all graph\\
-    \vspace{0.8cm}
-    \includegraphics[height=0.7\textheight]{psi-vs-a.eps}\\
-    Vladimir R V Assis et al J. Stat. Mech. (2011) P09023
-\end{frame}
-
-\begin{frame}
+\begin{frame}{\includegraphics[height=0.06\textheight]{ring-complete-thumb.eps}\hspace{0.25cm} All-to-all graphs}
     \centering
     Evolution of population of states as a function of time\\
-    \vspace{0.8cm}
+    \vspace{0.4cm}
     \includegraphics[height=0.6\textheight]{pop-evolution.eps}\\
     Vladimir R V Assis et al J. Stat. Mech. (2011) P09023
 \end{frame}
 
-\begin{frame}
+\begin{frame}{\includegraphics[height=0.06\textheight]{ring-complete-thumb.eps}\hspace{0.25cm} All-to-all graphs}
+    \centering
+    Behavior of $\psi$ as a function of coupling for the all-to-all graph\\
+    \vspace{0.4cm}
+    \includegraphics[height=0.7\textheight]{psi-vs-a.eps}\\
+    Vladimir R V Assis et al J. Stat. Mech. (2011) P09023
+\end{frame}
+
+\begin{frame}{\includegraphics[height=0.06\textheight]{ring-complete-thumb.eps}\hspace{0.25cm} All-to-all graphs}
+    \centering
+    Behavior of $\chi_r$ as a function of coupling for the all-to-all graph\\
+    \vspace{0.4cm}
+    \includegraphics[width=\textwidth]{scaled-variance.eps}\\
+    Vladimir R V Assis et al J. Stat. Mech. (2011) P09023
+\end{frame}
+
+\begin{frame}{\includegraphics[height=0.06\textheight]{ring-complete-thumb.eps}\hspace{0.25cm} All-to-all graphs}
     \centering
     Frequency of oscillations and order parameter $r$ as functions of coupling\\
-    \vspace{0.8cm}
+    \vspace{0.4cm}
     \includegraphics[height=0.6\textheight]{rvsa.eps}\\
     Vladimir R V Assis et al J. Stat. Mech. (2011) P09023
 \end{frame}
 
-\begin{frame}
+\begin{frame}{\includegraphics[height=0.06\textheight]{ring-complete-thumb.eps}\hspace{0.25cm} All-to-all graphs}
     \centering
     Event driven dynamics simulation on the complete graph\\
-    \vspace{0.8cm}
+    \vspace{0.4cm}
     \includegraphics[width=\textwidth]{complete_graph.eps}
 \end{frame}
 
-\begin{frame}
+\begin{frame}{\includegraphics[height=0.06\textheight]{ring-complete-thumb.eps}\hspace{0.25cm} All-to-all graphs}
     The all-to-all coupling presents two phase transitions
     \begin{itemize}
-        \vspace{0.35cm}
+        \vspace{0.3cm}
         \item \ \pause At $a=a_c=1.5$ there is the onset of global oscillations
-        \vspace{0.35cm}
-        \item \ \pause At $a=a^c\approx 3.1$ the period of oscillations diverge as $\omega=0$
+        \vspace{0.3cm}
+        \item \ \pause At $a=a^c\approx 3.1$ the period of oscillations diverge as $\omega \rightarrow 0$
+        \vspace{0.3cm}
+        \item \ \pause Mean field solution agrees with simulations
     \end{itemize}
 \end{frame}
 
-\begin{frame}
-    \includegraphics[width=0.1\textwidth]{cube.eps}\hspace{0.5cm}
-    Cubic lattices
+\begin{frame}{\includegraphics[height=0.06\textheight]{cube.eps}\hspace{0.25cm} Cubic lattices}
     \begin{itemize}
         \vspace{0.25cm}
         \item \ \pause Global synchronization does not occur for dimensions 2 or less
@@ -202,23 +214,33 @@
     \end{itemize}
 \end{frame}
 
-\begin{frame}
+\begin{frame}{\includegraphics[height=0.06\textheight]{cube.eps}\hspace{0.25cm} Cubic lattices}
     \centering
     Cluster growth at high coupling in a square lattice\\
-    \vspace{0.8cm}
+    \vspace{0.4cm}
     \includegraphics[height=0.6\textheight]{nucleation.eps}\\
     Vladimir R V Assis et al J. Stat. Mech. (2011) P09023
 \end{frame}
 
-\begin{frame}
+\begin{frame}{\includegraphics[height=0.06\textheight]{cube.eps}\hspace{0.25cm} Cubic lattices}
     \centering
     Escape time from homogeneous initial condition\\
-    \vspace{0.8cm}
+    \vspace{0.4cm}
     \includegraphics[height=0.75\textheight]{escapetime.eps}\\
     Vladimir R V Assis et al J. Stat. Mech. (2011) P09023
 \end{frame}
 
-\begin{frame}
+\begin{frame}{\includegraphics[height=0.06\textheight]{cube.eps}\hspace{0.25cm} Cubic lattices}
+    \begin{itemize}
+        \item \ \pause Lower critical dimension of 2
+        \vspace{0.25cm}
+        \item \ \pause Evidence against infinite period transition for local lattices
+        \vspace{0.25cm}
+        \item \ \pause Analogy with nucleation process where increasing system size increases the frequency of global oscillations
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{\includegraphics[height=0.06\textheight]{ring-of-power.eps}\hspace{0.25cm} Ring Lattices}
     \begin{columns}
         \begin{column}{.5\textwidth}
             \adjincludegraphics[width=\textwidth, valign=t]{ring.eps}\\
@@ -241,7 +263,7 @@
     \end{columns}
 \end{frame}
 
-\begin{frame}
+\begin{frame}{\includegraphics[height=0.06\textheight]{ring-of-power.eps}\hspace{0.25cm} Ring Lattices}
     \begin{columns}
         \begin{column}{.5\textwidth}
             \adjincludegraphics[height=0.4\textheight, valign=t]{ring.eps}\\
@@ -265,7 +287,7 @@
     \end{columns}
 \end{frame}
 
-\begin{frame}
+\begin{frame}{\includegraphics[height=0.06\textheight]{ring-of-power.eps}\hspace{0.25cm} Ring Lattices}
     Small-world graphs are characterized by the \textbf{Clustering Coefficient $C$} and the \textbf{Average Path Length $L$} between nodes.\\
     \begin{itemize}
         \vspace{0.25cm}
@@ -275,12 +297,12 @@
     \end{itemize}
 \end{frame}
 
-\begin{frame}
+\begin{frame}{\includegraphics[height=0.06\textheight]{ring-of-power.eps}\hspace{0.25cm} Ring Lattices}
     \centering
     \includegraphics[height=0.85\textheight]{small-world.eps}
 \end{frame}
 
-\begin{frame}
+\begin{frame}{\includegraphics[height=0.06\textheight]{ring-of-power.eps}\hspace{0.25cm} Ring Lattices}
     \begin{columns}
         \begin{column}{0.4\textwidth}
             \adjincludegraphics[height=0.35\textheight, valign=t]{ring-1D.eps}\\
@@ -293,7 +315,7 @@
             \vspace{0.25cm}
             \begin{itemize}
                 \vspace{0.25cm}
-                \item \ \pause For $K/N \approx 0$ we know there is no global synchrony (1D cubic lattice with periodic boundary)
+                \item \ \pause For $K/N \approx 0$ we know there is no global synchrony (1D cubic lattice with periodic boundaries)
                 \vspace{0.25cm}
                 \item \ \pause For $K/N\rightarrow 0.5$ there must exist two transitions
                 \vspace{0.25cm}
@@ -303,49 +325,49 @@
     \end{columns}
 \end{frame}
 
-\begin{frame}
+\begin{frame}{\includegraphics[height=0.06\textheight]{matrix.eps}\hspace{0.25cm} Simulations}
     \centering
     Population evolution on a ring lattice with N=10000 K=1280\\
-    \vspace{0.8cm}
+    \vspace{0.4cm}
     \includegraphics[width=\textwidth]{pop-evolution-stacked-K_1280.eps}
 \end{frame}
 
-\begin{frame}
+\begin{frame}{\includegraphics[height=0.06\textheight]{matrix.eps}\hspace{0.25cm} Simulations}
     \centering
     Population evolution on a ring lattice with N=10000 K=160\\
-    \vspace{0.8cm}
+    \vspace{0.4cm}
     \includegraphics[width=\textwidth]{pop-evolution-stacked-K_160.eps}
 \end{frame}
 
-\begin{frame}
+\begin{frame}{\includegraphics[height=0.06\textheight]{matrix.eps}\hspace{0.25cm} Simulations}
     \centering
     Population evolution on a ring lattice with N=10000 K=80\\
-    \vspace{0.8cm}
+    \vspace{0.4cm}
     \includegraphics[width=0.8\textwidth]{pop-evolution-stacked-K_80.eps}
 \end{frame}
 
-\begin{frame}
+\begin{frame}{\includegraphics[height=0.06\textheight]{matrix.eps}\hspace{0.25cm} Simulations}
     \centering
     Fixed system size, increasing $K$ (or $\alpha$)\\
     \vspace{0.25cm}
     \includegraphics[width=\textwidth]{ringOP.eps}
 \end{frame}
 
-\begin{frame}
+\begin{frame}{\includegraphics[height=0.06\textheight]{matrix.eps}\hspace{0.25cm} Simulations}
     \centering
     Behavior for fixed $\alpha=0.1$ and increasing system size $N$\\
     \vspace{0.25cm}
     \includegraphics[width=0.8\textwidth]{increasingN-alpha10.eps}
 \end{frame}
 
-\begin{frame}
+\begin{frame}{\includegraphics[height=0.06\textheight]{matrix.eps}\hspace{0.25cm} Simulations}
     \centering
     Behavior for fixed $\alpha=0.34$ and increasing system size $N$\\
     \vspace{0.25cm}
     \includegraphics[width=0.8\textwidth]{increasingN-alpha34.eps}
 \end{frame}
 
-\begin{frame}
+\begin{frame}{\includegraphics[height=0.06\textheight]{matrix.eps}\hspace{0.25cm} Simulations}
     \centering
     Fixed $N$ and $K$, increasing $p$\\
     \vspace{0.25cm}
@@ -354,10 +376,10 @@
 
 \begin{frame}{Conclusions and Discussion}
     \begin{itemize}
-        \item \ \pause The phase transitions seem to exist on ring graphs for intermediate values of $\alpha$. Even for $\alpha=0.1$ the behavior of $\psi$ and $\omega$ indicate a transition, though $\chi$ behaves differently.
+        \item \ \pause The phase transitions seem to exist on ring graphs for intermediate values of $\alpha$. Even for $\alpha=0.1$ the behavior of $\psi$ and $\omega$ indicate a transition, though $\chi$ behaves differently. What is the meaning of the ``flat'' region in the $\chi$ graph?
         \vspace{0.1cm}
         \item \ \pause Increasing the rewiring probability has similar effects to increasing connectivity. This is expected according to Duncan J. Watts and Steven H. Strogatz.\\
-            \hfill -- "Collective dynamics of ‘small-world’networks." nature (1998)
+            \hfill -- ``Collective dynamics of 'small-world' networks.'' nature (1998)
         \vspace{0.1cm}
         \item \ \pause Although $p>0$ facilitates synchronicity, it is not necessary for the onset of global synchronicity even for low values of $\alpha$.
         \vspace{0.1cm}
